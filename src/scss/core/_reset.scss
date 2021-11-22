@@ -1,5 +1,6 @@
 :root {
   font-size: 10px;
+  font-family: $textFont;
 }
 
 * {
@@ -7,6 +8,7 @@
   margin: 0;
   padding: 0;
 }
-// li {
-//   list-style-type: none;
-// }
+
+li {
+  list-style-type: none;
+}
