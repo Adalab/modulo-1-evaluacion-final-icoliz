@@ -1,8 +1,52 @@
+.container {
+  margin: 0 15px;
+}
+
 .header {
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
   object-fit: cover;
   width: 100%;
   height: 100vh;
   text-align: center;
+  &__menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mediumBlue;
+    width: 44px;
+    height: 44px;
+    padding: 5px;
+  }
+}
+
+.title {
+  font-family: $titleFont;
+  font-size: 4.2rem;
+  word-spacing: 100vw;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 284px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  font-family: $textFont;
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 45px;
+}
+
+.scroll-down-link {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.scroll-down-icon {
+  transform: translateY(16px);
 }
