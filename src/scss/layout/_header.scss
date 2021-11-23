@@ -1,15 +1,20 @@
 .container {
   margin: 0 15px;
+
+  @media (min-width: 768px) {
+    margin: 0 39px;
+  }
 }
 
 .header {
   background-image: url("../images/cover.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  object-fit: cover;
+  background-color: $brightOrange;
+  text-align: center;
   width: 100%;
   height: 100vh;
-  text-align: center;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Hace que la imagen se adapte al tamaño del contenedor padre (en lugar de object-fit) */
   &__menu {
     position: fixed;
     display: flex;
@@ -34,12 +39,22 @@
     text-transform: uppercase;
     padding-top: 284px;
     padding-bottom: 10px;
+
+    @media (min-width: 768px) {
+      font-size: 8rem;
+      padding-bottom: 20px;
+    }
   }
   &__subtitle {
     font-family: $textFont;
     font-size: 1.6rem;
     color: white;
     margin-bottom: 45px;
+
+    @media (min-width: 768px) {
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+    }
   }
 }
 
