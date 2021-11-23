@@ -1,0 +1,62 @@
+.footer {
+  background-color: $darkBlue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-up-link {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+}
+
+.press {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3rem;
+  padding: 45px 0 15px 0;
+  &__item {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    &--link {
+      color: white;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3rem;
+  padding: 15px 0;
+  &__item {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    &--link {
+      color: white;
+    }
+  }
+}
+
+.copy {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-top: 15px;
+}
+
+.claim {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-bottom: 45px;
+  &__heart {
+    color: $brightOrange;
+  }
+}

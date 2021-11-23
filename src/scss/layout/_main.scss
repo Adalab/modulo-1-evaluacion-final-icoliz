@@ -30,5 +30,48 @@
     padding: 0 25px;
     margin-top: 10px;
     margin-bottom: 45px;
+    font-size: 2rem;
+  }
+}
+
+.blue {
+  background-color: $iceBlue;
+  text-align: center;
+  &__grid {
+    display: grid;
+    grid-template-columns: 53px 1fr 53px;
+    &--title {
+      grid-column: 1/4;
+      height: 30px;
+      font-family: $titleFont;
+      font-size: 2.4rem;
+      text-transform: capitalize;
+      margin: 30px 0;
+    }
+    &--btn {
+      grid-column: 2/3;
+      background-color: $brightOrange;
+      color: white;
+      border: 0px;
+      border-radius: 22.5px;
+      height: 45px;
+      font-size: 2rem;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.reasons {
+  grid-column: 2/3;
+  padding: 15px 0 30px 0;
+  &__title {
+    grid-column: 2/3;
+    font-family: $titleFont;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
