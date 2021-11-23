@@ -1,5 +1,7 @@
 .header {
-  background-image: url("../images/cover.jpg");
+  background-image: url("../images/cover.jpg"); /* Por si se visualiza en un navegador que no lea gradientes */
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url("../images/cover.jpg");
   background-color: $brightOrange;
   text-align: center;
   width: 100%;
@@ -59,4 +61,5 @@
   border-radius: 50%;
   width: 45px;
   height: 45px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

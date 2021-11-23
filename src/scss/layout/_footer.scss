@@ -16,7 +16,6 @@
     }
   }
 }
-
 .scroll-up-link {
   display: flex;
   justify-content: center;
@@ -25,7 +24,13 @@
   width: 45px;
   height: 45px;
   transform: translateY(-50%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform ease-in 0.5s;
+  &:hover {
+    transform: translateY(-50%) rotate(360deg);
+  }
 }
+
 .nav-press,
 .nav-social,
 .copy {
