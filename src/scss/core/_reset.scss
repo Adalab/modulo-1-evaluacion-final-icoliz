@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overscroll-behavior-y: none; /* Para eliminar el efecto de rebote al llegar a la parte superior o inferior de la página*/
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
