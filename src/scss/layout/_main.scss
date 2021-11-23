@@ -1,3 +1,14 @@
+.container {
+  padding: 0 15px;
+
+  @media (min-width: 768px) {
+    padding: 0 39px;
+  }
+  @media (min-width: 1280px) {
+    padding: 0 275px;
+  }
+}
+
 .white {
   display: flex;
   flex-direction: column;
@@ -7,6 +18,9 @@
     text-transform: capitalize;
     margin-top: 20px;
     padding: 10px 0;
+    @media (min-width: 1280px) {
+      font-size: 1.6rem;
+    }
   }
   &__title {
     font-family: $titleFont;
@@ -14,6 +28,9 @@
     text-transform: capitalize;
     @media (min-width: 768px) {
       font-size: 2.6rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 3.2rem;
     }
   }
   &__text {
@@ -53,8 +70,12 @@
     display: grid;
     grid-template-columns: 53px 1fr 53px;
     @media (min-width: 768px) {
+      padding: 0 39px;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 28px;
+    }
+    @media (min-width: 768px) {
+      padding: 60px 80px 0 80px;
     }
     &--title {
       grid-column: 1/4;
@@ -65,6 +86,9 @@
       margin: 30px 0;
       @media (min-width: 768px) {
         font-size: 2.6rem;
+      }
+      @media (min-width: 1280px) {
+        font-size: 3.2rem;
       }
     }
     &--btn {
