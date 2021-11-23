@@ -12,12 +12,19 @@
     font-family: $titleFont;
     font-size: 2.4rem;
     text-transform: capitalize;
+    @media (min-width: 768px) {
+      font-size: 2.6rem;
+    }
   }
   &__text {
     color: $greyishBrown;
     font-size: 1.8rem;
     line-height: 3rem;
     padding: 10px 0;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      padding: 30px 0;
+    }
   }
 
   &__btn {
@@ -31,6 +38,11 @@
     margin-top: 10px;
     margin-bottom: 45px;
     font-size: 2rem;
+
+    @media (min-width: 768px) {
+      margin-top: 0px;
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -40,6 +52,10 @@
   &__grid {
     display: grid;
     grid-template-columns: 53px 1fr 53px;
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 28px;
+    }
     &--title {
       grid-column: 1/4;
       height: 30px;
@@ -47,6 +63,9 @@
       font-size: 2.4rem;
       text-transform: capitalize;
       margin: 30px 0;
+      @media (min-width: 768px) {
+        font-size: 2.6rem;
+      }
     }
     &--btn {
       grid-column: 2/3;
@@ -57,6 +76,10 @@
       height: 45px;
       font-size: 2rem;
       margin-bottom: 60px;
+      @media (min-width: 768px) {
+        grid-column: 2/3;
+        margin-top: 30px;
+      }
     }
   }
 }
@@ -69,9 +92,28 @@
     font-family: $titleFont;
     font-size: 1.8rem;
     line-height: 3rem;
+    @media (min-width: 768px) {
+      font-size: 2.4rem;
+      padding-bottom: 14px;
+    }
   }
   &__text {
     font-size: 18px;
     line-height: 30px;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .reason1 {
+    grid-column: 1/2;
+  }
+  .reason2 {
+    grid-column: 2/3;
+  }
+  .reason3 {
+    grid-column: 3/4;
   }
 }
