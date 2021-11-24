@@ -5,7 +5,7 @@
   text-align: center;
   width: 100%;
   height: 100vh;
-  min-height: 320px;
+  min-height: 320px; /* Impide que el header se "rompa" al verlo horizontalmente en dispositivos pequeños */
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; /* Hace que la imagen se adapte al tamaño del contenedor padre (en lugar de object-fit) */
@@ -41,7 +41,7 @@
       font-size: 8rem;
       padding-bottom: 20px;
     }
-    @include tablet {
+    @include desktop {
       font-size: 10rem;
     }
   }
