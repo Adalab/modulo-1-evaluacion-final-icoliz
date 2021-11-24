@@ -35,6 +35,14 @@ Uso de selectores de ID para enlazar con otras secciones dentro de la misma pág
 - Inclusión de fuentes (tipografías) externas.
 - Creación de ramas de `git`para trabajar en las distintas partes del documento: `mainsection` y `responsive`.
 
+### Cambios adicionales...
+
+...por preferencias estilísticas (no modifican el aspecto de la web dado en Zeplin):
+
+- BONUS del ejercicio: degradado para la fotografía del hero.
+- Quitar el overscrolling (efecto de que la página "rebota" al alcanzar los bordes superior o inferior en el navegador)
+- Scroll suave (comentado en el segundo sprint de proyecto por una compañera)
+
 ### Dificultades técnicas encontradas (solucionadas gracias al soporte de profes)
 
 - `Header` adaptado a altura de pantallas pequeñas.
