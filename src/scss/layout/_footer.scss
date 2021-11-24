@@ -10,12 +10,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    @media (min-width: 768px) {
+    @include tablet {
       flex-direction: row;
       justify-content: space-between;
       padding: 0 39px;
     }
-    @media (min-width: 1280px) {
+    @include tablet {
       width: 540px;
     }
   }
@@ -40,10 +40,10 @@
 .nav-social,
 .copy {
   width: 100%;
-  @media (min-width: 768px) {
+  @include tablet {
     width: 30%;
   }
-  @media (min-width: 1280px) {
+  @include tablet {
     width: 160px;
   }
 }
@@ -54,7 +54,7 @@
   align-items: center;
   line-height: 3rem;
   padding: 15px 0;
-  @media (min-width: 768px) {
+  @include tablet {
     align-items: flex-start;
   }
   &__item {
@@ -72,7 +72,7 @@
   align-items: center;
   line-height: 3rem;
   padding: 15px 0;
-  @media (min-width: 768px) {
+  @include tablet {
     align-items: flex-start;
   }
   &__item {
@@ -88,7 +88,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (min-width: 768px) {
+  @include tablet {
     align-items: flex-start;
     order: -1;
   }

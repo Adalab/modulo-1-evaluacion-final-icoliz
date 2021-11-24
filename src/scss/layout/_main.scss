@@ -1,10 +1,11 @@
 .container {
   padding: 0 15px;
 
-  @media (min-width: 768px) {
+  @include tablet {
     padding: 0 39px;
   }
-  @media (min-width: 1280px) {
+
+  @include desktop {
     padding: 0 275px;
   }
 }
@@ -18,7 +19,7 @@
     text-transform: capitalize;
     margin-top: 20px;
     padding: 10px 0;
-    @media (min-width: 1280px) {
+    @include desktop {
       font-size: 1.6rem;
     }
   }
@@ -26,10 +27,10 @@
     font-family: $titleFont;
     font-size: 2.4rem;
     text-transform: capitalize;
-    @media (min-width: 768px) {
+    @include tablet {
       font-size: 2.6rem;
     }
-    @media (min-width: 1280px) {
+    @include desktop {
       font-size: 3.2rem;
     }
   }
@@ -38,7 +39,7 @@
     font-size: 1.8rem;
     line-height: 3rem;
     padding: 10px 0;
-    @media (min-width: 768px) {
+    @include tablet {
       font-size: 2rem;
       padding: 30px 0;
     }
@@ -62,12 +63,12 @@
       transform: translateY(-2px) scale(1.05);
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
-    @media (min-width: 768px) {
+    @include tablet {
       width: 91px;
       margin-top: 0px;
       margin-bottom: 60px;
     }
-    @media (min-width: 1280px) {
+    @include desktop {
       width: 160px;
     }
   }
@@ -78,12 +79,12 @@
   display: grid;
   grid-template-columns: 53px 1fr 53px;
   text-align: center;
-  @media (min-width: 768px) {
+  @include tablet {
     padding: 0 39px;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 28px;
   }
-  @media (min-width: 1280px) {
+  @include desktop {
     padding: 30px 80px 0 80px;
   }
   &__title {
@@ -93,10 +94,10 @@
     font-size: 2.4rem;
     text-transform: capitalize;
     margin: 30px 0;
-    @media (min-width: 768px) {
+    @include tablet {
       font-size: 2.6rem;
     }
-    @media (min-width: 1280px) {
+    @include desktop {
       font-size: 3.2rem;
     }
   }
@@ -115,7 +116,7 @@
       transform: translateY(-2px) scale(1.05);
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
-    @media (min-width: 768px) {
+    @include tablet {
       grid-column: 2/3;
       margin-top: 30px;
     }
@@ -130,7 +131,7 @@
     font-family: $titleFont;
     font-size: 1.8rem;
     line-height: 3rem;
-    @media (min-width: 768px) {
+    @include tablet {
       font-size: 2.4rem;
       padding-bottom: 14px;
     }
@@ -138,13 +139,13 @@
   &__text {
     font-size: 18px;
     line-height: 30px;
-    @media (min-width: 768px) {
+    @include tablet {
       font-size: 2rem;
     }
   }
 }
 
-@media (min-width: 768px) {
+@include tablet {
   .reason1 {
     grid-column: 1/2;
   }

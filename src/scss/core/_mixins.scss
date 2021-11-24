@@ -3,7 +3,6 @@
     @content;
   }
 }
-//mixin para diferentes dispositivos. Consultar por qué no funcionan
 
 @mixin desktop {
   @media (min-width: 1280px) {
