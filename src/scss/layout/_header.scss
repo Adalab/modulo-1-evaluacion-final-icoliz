@@ -16,6 +16,11 @@
   @include tablet {
     min-height: 500px;
   }
+  &__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   &__menu {
     position: fixed;
     top: 0;
